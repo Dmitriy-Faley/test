@@ -8,8 +8,8 @@ import './css/style.css'
 
 
 // Bootstrap (example)
-// import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap/dist/css/bootstrap.min.css'
+//import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 // import 'vue'
 // import Vue from 'vue'

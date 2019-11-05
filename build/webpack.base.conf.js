@@ -114,8 +114,8 @@ module.exports = {
     }),
     new GoogleFontsPlugin({
       fonts: [{
-          family: "Montserrat",
-          variants: ["400,700,800,900"]
+          family: "Exo 2",
+          variants: ["400,500,800,900"]
         },
         {
           family: "Crimson Text",
