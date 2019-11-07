@@ -139,14 +139,26 @@ header{
     font-weight: 600;
     font-size: 36px;
     padding-top: 35px;
+    padding-bottom: 26px;
     text-align: center;
 }
 
-.button_header{
-    display: flex;
-    justify-content: space-around;
-
+.button_header div:nth-child(2) img{
+    width: 100%;
 }
+
+/* .button_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/*
+.button_header div{
+    margin-right: 4%;
+    margin-left: 4%;
+} */
 
 .text_brends{
     font-size: 18px;
@@ -272,15 +284,16 @@ header{
     .card-description{
         text-align: center;
     }
+    
 }
 
-/* 481 - 768 px */
+
 @media screen and (max-width: 575px){
-    .button_header {
-        flex-direction: column;
-        justify-content: center;
-    }
     .button_header div{
         margin-bottom: 20px;
+        text-align: center;
+    }
+    .button_header div:nth-child(2) img {
+        width: auto;
     }
 }
