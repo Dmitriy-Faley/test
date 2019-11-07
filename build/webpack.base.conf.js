@@ -116,10 +116,6 @@ module.exports = {
       fonts: [{
           family: "Exo 2",
           variants: ["400,500,800,900"]
-        },
-        {
-          family: "Crimson Text",
-          variants: ["400,600,700"]
         }
       ],
 

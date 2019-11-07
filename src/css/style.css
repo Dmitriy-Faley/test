@@ -139,19 +139,24 @@ header{
     font-weight: 600;
     font-size: 36px;
     padding-top: 35px;
+    text-align: center;
 }
 
+.button_header{
+    display: flex;
+    justify-content: space-around;
 
+}
 
 .text_brends{
     font-size: 18px;
     font-family: 'Exo 2', sans-serif;
     font-weight: 600;
     color:#77716a;
-    background-image: linear-gradient(to right, #77716a 50%, transparent 50%);
-    background-position: 0 1.04em;
+    background-image: linear-gradient(90deg, #77716a 50%, rgba(0, 0, 0, 0) 0);
+    background-position: 0px 1.0em;
     background-repeat: repeat-x;
-    background-size: 4px 4px;
+    background-size: 4px 2px;
 }
 
 .card {
@@ -180,9 +185,51 @@ header{
     background-repeat: no-repeat;
 }
 
-.card-title{
+.card-data{
     display: flex;
     flex-direction: column;
+}
+
+.card-sort{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    color:#3c2f20;
+    padding-top: 15px;
+}
+
+.card-title{
+
+    font-family: 'Exo 2', sans-serif;
+    color:#3c2f20;
+    margin-bottom: 18px;
+    cursor: pointer;
+    
+}
+
+.card-title:hover{
+    color:#5b84f0;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-title span:first-child {
+    font-size: 30px;
+    color:inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0;
+    background-image: linear-gradient(90deg, #77716a 50%, rgba(0, 0, 0, 0) 0);
+    background-position: 0px 1.0em;
+    background-repeat: repeat-x;
+    background-size: 4px 2px;
+}
+
+.card-title span:last-child{
+    font-size: 20px;
+    color:inherit;
+    background-image: linear-gradient(90deg, #77716a 50%, rgba(0, 0, 0, 0) 0);
+    background-position: 0px 1.0em;
+    background-repeat: repeat-x;
+    background-size: 4px 2px;
 }
 
 .card-description {
@@ -190,6 +237,7 @@ header{
     font-size: 16px;
     line-height: 1.38;
     padding-bottom: 6px;
+    padding-top: 10px;
     position: relative;
     z-index: 4;
     color:#1d1813;
@@ -210,3 +258,29 @@ header{
 
 
 
+/* 481 - 768 px */
+@media screen and (max-width: 768px) {
+    .card-title span:first-child{
+        font-size: 26px;
+    }
+    .card-title span:last-child{
+        font-size: 16px;
+    }
+    .card-data{
+        text-align: center;
+    }
+    .card-description{
+        text-align: center;
+    }
+}
+
+/* 481 - 768 px */
+@media screen and (max-width: 575px){
+    .button_header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .button_header div{
+        margin-bottom: 20px;
+    }
+}
